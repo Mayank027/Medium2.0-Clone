@@ -1,0 +1,18 @@
+*[_type == "post" && slug.current == "7 Must-Know VS Code Extensions for a React Developer"][0]{
+        _id,
+        _createdAt,
+        title,
+        author -> {
+            name,
+            image
+        },
+        'comments': *[
+            _type == "comment" &&
+            post._ref == ^.id &&
+            approved == true
+        ],
+        description,
+        mainImage,
+        slug,
+        body
+    }
