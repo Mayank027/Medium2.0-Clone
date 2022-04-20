@@ -6,6 +6,7 @@ import PortableText from 'react-portable-text'
 import { useForm, SubmitHandler } from 'react-hook-form'
 import { useState } from 'react'
 import Comments from '../api/createComment'
+import React from 'react'
 
 interface IFormInput {
   _id: string
@@ -77,10 +78,10 @@ function Post({ post }: Props) {
             content={post.body}
             serializers={{
               h1: (props: any) => {
-                ;<h1 className="my-5 text-2xl font-bold" {...props} />
+                <h1 className="my-5 text-2xl font-bold" {...props} />
               },
               h2: (props: any) => {
-                ;<h2 className="my-5 text-xl font-bold" {...props} />
+                <h2 className="my-5 text-xl font-bold" {...props} />
               },
               li: ({ children }: any) => (
                 <li className="ml-4 list-disc"> {children}</li>

@@ -4,6 +4,7 @@ import Image from 'next/image'
 import Banner from '../components/Banner'
 import Header from '../components/Header'
 import Link from 'next/link'
+import React from 'react'
 
 import { sanityClient, urlFor } from '../sanity'
 import { Post } from '../typings'
