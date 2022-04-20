@@ -6,7 +6,7 @@ function Banner() {
       <h1 className="max-w-xl font-serif text-6xl">
         <span className="underline decoration-black decoration-4">
           Medium
-        </span>
+        </span>{' '}
         is a place to write, read and connect
       </h1>
       <h2>
